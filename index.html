@@ -115,6 +115,19 @@
   <script src="js/local_storage_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
-  <script defer src="https://umami.adclosenn.top/script.js" data-website-id="b230ccee-7158-4f84-9e05-d9478932d4c0"></script>
+  <script>
+  if (location.hostname.toLowerCase() === "2048.adclosenn.top") {
+    var s = document.createElement("script");
+    s.src = "https://umami.adclosenn.top/script.js";
+    s.defer = true;
+    s.setAttribute("data-website-id", "b230ccee-7158-4f84-9e05-d9478932d4c0");
+    document.head.appendChild(s);
+    console.info("已尝试执行 Umami 脚本")
+
+  }
+  else {
+    console.warn("未向 Umami 发送数据，当前 hostname 为：" + location.hostname)
+  }
+  </script>
 </body>
 </html>
