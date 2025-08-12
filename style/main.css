@@ -101,7 +101,7 @@ h1.title {
   content: "当前分数"; }
 
 .best-container:after {
-  content: "最佳记录"; }
+  content: "最佳分数"; }
 
 p {
   margin-top: 0;
@@ -147,7 +147,8 @@ hr {
     opacity: 1; } }
 .game-container {
   margin-top: 40px;
-  margin-left: 120px;
+  width:200px;
+  margin:0 auto;
   position: relative;
   padding: 15px;
   cursor: default;
