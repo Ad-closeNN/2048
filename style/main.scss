@@ -68,6 +68,10 @@ h1.title {
   $height: 25px;
 
   position: relative;
+  -webkit-user-select: none; 
+  -moz-user-select: none;    
+  -ms-user-select: none;     
+  user-select: none;         
   display: inline-block;
   background: $game-container-background;
   padding: 15px 25px;
@@ -107,11 +111,11 @@ h1.title {
 }
 
 .score-container:after {
-  content: "Score";
+  content: "分数";
 }
 
 .best-container:after {
-  content: "Best";
+  content: "最佳";
 }
 
 p {
@@ -502,6 +506,10 @@ hr {
 
   .score-container, .best-container {
     margin-top: 0;
+    -webkit-user-select: none; 
+    -moz-user-select: none;    
+    -ms-user-select: none;     
+    user-select: none;         
     padding: 15px 10px;
     min-width: 40px;
   }
